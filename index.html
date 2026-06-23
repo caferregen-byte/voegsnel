@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--
+=====================================================================
+  IDRIS ‚Äî TE VERVANGEN DOOR ECHTE GEGEVENS  (zoek op: VERVANG)
+  ---------------------------------------------------------------
+  1. WA_NUMBER (onderin script)  -> nu 31600000000
+  2. Telefoon (tel:)             -> nu +31 6 12 34 56 78  (voorbeeld)
+  3. E-mailadres                 -> nu info@voegsnel.nl  (klopt dit?)
+  4. Adres / postcode            -> nu Zilverstraat 123 (= voorbeeld)
+  5. KVK / BTW                   -> KVK 66285067 staat erin, BTW invullen
+  6. Projectfoto's               -> .prop-img blokken: eigen voor/na-foto's
+  7. Foto "Over ons"             -> blok met "FOTO:" -> echte foto van Idris/team
+  8. Google-reviews link         -> knop "Bekijk Google-reviews"
+=====================================================================
+-->
+
+<title>Voegwerk &amp; Gevelrenovatie Den Haag | Voeg Snel B.V. ‚Äî sinds 2007</title>
+<meta name="description" content="Voeg Snel B.V. ‚Äî uw voegbedrijf in Den Haag e.o. Vakkundig voegwerk, gevelreiniging, impregneren en gevelrenovatie. Gratis inspectie, eerlijke prijs en garantie op het werk." />
+<meta name="theme-color" content="#1a2532" />
+<meta property="og:title" content="Voeg Snel B.V. | Voegwerk &amp; gevelrenovatie Den Haag" />
+<meta property="og:description" content="Vakkundig voeg- en gevelwerk in de regio Den Haag. Gratis inspectie, eerlijke prijs en garantie." />
+<meta property="og:type" content="website" />
+<link rel="canonical" href="https://voegsnel.nl/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a2532'/%3E%3Cg fill='%23cf5a2c'%3E%3Crect x='18' y='22' width='28' height='14' rx='2'/%3E%3Crect x='54' y='22' width='28' height='14' rx='2'/%3E%3Crect x='34' y='43' width='28' height='14' rx='2'/%3E%3Crect x='18' y='64' width='28' height='14' rx='2'/%3E%3Crect x='54' y='64' width='28' height='14' rx='2'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+<script>document.documentElement.classList.add('js');</script>
+
+<!-- LocalBusiness schema ‚Äî sterk voor lokaal vindbaar zijn in Google -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Voeg Snel B.V.",
+  "description":"Voegbedrijf in Den Haag, gespecialiseerd in voegwerk, gevelreiniging en gevelrenovatie.",
+  "url":"https://voegsnel.nl/",
+  "telephone":"+31612345678",
+  "priceRange":"‚Ç¨‚Ç¨",
+  "foundingDate":"2007",
+  "address":{"@type":"PostalAddress","streetAddress":"Zilverstraat 123","postalCode":"2513 RP","addressLocality":"Den Haag","addressCountry":"NL"},
+  "areaServed":["Den Haag","Rijswijk","Delft","Zoetermeer","Leidschendam-Voorburg","Wassenaar","Westland"],
+  "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:30","closes":"17:30"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"47"}
+}
+</script>
+
+<style>
+  :root{
+    --navy:#1a2532;          /* antraciet (was navy) */
+    --navy-2:#212f3d;
+    --navy-soft:#2c3d4f;
+    --gold:#cf5a2c;          /* baksteen / terracotta (was goud) */
+    --gold-soft:#e07b4f;
+    --cream:#f6f3ec;
+    --paper:#ffffff;
+    --ink:#1c2330;
+    --muted:#64727f;
+    --line:#e7e1d4;
+    --shadow:0 18px 48px -18px rgba(26,37,50,.30);
+    --shadow-sm:0 8px 26px -14px rgba(26,37,50,.30);
+    --radius:18px;
+    --container:1180px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.15;font-weight:600;color:var(--navy)}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ul{list-style:none}
+  .container{width:100%;max-width:var(--container);margin:0 auto;padding:0 24px}
+  section{scroll-margin-top:86px}
+
+  .btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:700;font-size:.95rem;letter-spacing:.2px;padding:.95rem 1.6rem;border-radius:999px;border:1.5px solid transparent;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s,color .25s;white-space:nowrap}
+  .btn svg{width:18px;height:18px}
+  .btn-gold{background:var(--gold);color:#fff;box-shadow:0 12px 28px -12px rgba(207,90,44,.8)}
+  .btn-gold:hover{transform:translateY(-2px);background:var(--gold-soft);box-shadow:0 18px 34px -12px rgba(207,90,44,.9)}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+  .btn-ghost:hover{background:rgba(255,255,255,.10);border-color:#fff;transform:translateY(-2px)}
+  .btn-dark{background:var(--navy);color:#fff}
+  .btn-dark:hover{background:var(--navy-2);transform:translateY(-2px)}
+  .btn-wide{width:100%;justify-content:center}
+
+  header.nav{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .35s,box-shadow .35s,padding .35s}
+  header.nav.scrolled{background:rgba(255,255,255,.94);backdrop-filter:blur(12px);box-shadow:0 6px 24px -16px rgba(26,37,50,.45)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:80px;transition:height .35s}
+  header.nav.scrolled .nav-inner{height:68px}
+  .brand{display:flex;align-items:center;gap:.7rem;font-weight:800;color:#fff;transition:color .35s}
+  header.nav.scrolled .brand{color:var(--navy)}
+  .brand .mono{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--gold);color:#fff;font-family:'Playfair Display',serif;font-weight:700;font-size:1.15rem;box-shadow:0 8px 20px -8px rgba(207,90,44,.7)}
+  .brand .b-text{display:flex;flex-direction:column;line-height:1.1}
+  .brand .b-text small{font-family:'Manrope';font-weight:600;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+  .brand .b-text span{font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:600}
+  nav.links{display:flex;align-items:center;gap:2rem}
+  nav.links a{font-weight:600;font-size:.95rem;color:rgba(255,255,255,.88);position:relative;transition:color .3s}
+  header.nav.scrolled nav.links a{color:var(--ink)}
+  nav.links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--gold);transition:width .3s var(--ease)}
+  nav.links a:hover{color:var(--gold)}
+  nav.links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:.9rem}
+  .nav-phone{display:flex;align-items:center;gap:.5rem;font-weight:700;color:#fff;transition:color .35s}
+  header.nav.scrolled .nav-phone{color:var(--navy)}
+  .nav-phone svg{width:18px;height:18px;color:var(--gold)}
+  .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+  .hamburger span{width:26px;height:2.5px;background:#fff;border-radius:2px;transition:.3s}
+  header.nav.scrolled .hamburger span{background:var(--navy)}
+
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;z-index:-2;
+    background:
+      linear-gradient(115deg, rgba(18,26,35,.96) 0%, rgba(20,29,40,.86) 45%, rgba(26,37,49,.60) 100%),
+      repeating-linear-gradient(0deg,#6e4d3c 0 26px,#5a3f31 26px 29px),
+      repeating-linear-gradient(90deg,transparent 0 58px,rgba(0,0,0,.32) 58px 62px);
+    background-size:cover,100% 29px,62px 29px;background-position:center}
+  .hero-glow{position:absolute;z-index:-1;width:520px;height:520px;right:-120px;top:-80px;border-radius:50%;background:radial-gradient(circle,rgba(207,90,44,.32),transparent 65%);filter:blur(20px)}
+  .hero .container{padding-top:120px;padding-bottom:80px}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;color:var(--gold-soft);border:1px solid rgba(207,90,44,.4);padding:.45rem 1rem;border-radius:999px;background:rgba(207,90,44,.08)}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);color:#fff;margin:1.4rem 0 1.1rem;max-width:17ch}
+  .hero h1 em{font-style:normal;color:var(--gold-soft);white-space:nowrap}
+  .hero p.lead{font-size:clamp(1.05rem,1.6vw,1.28rem);max-width:56ch;color:rgba(255,255,255,.82);margin-bottom:2.2rem}
+  .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+  .hero-meta{display:flex;gap:2.4rem;margin-top:3.2rem;flex-wrap:wrap}
+  .hero-meta .m{display:flex;flex-direction:column}
+  .hero-meta .m b{font-family:'Playfair Display',serif;font-size:2rem;color:#fff;line-height:1}
+  .hero-meta .m span{font-size:.85rem;color:rgba(255,255,255,.7);margin-top:.35rem}
+  .hero-meta .m b .plus{color:var(--gold-soft)}
+  .scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.6rem}
+  .scroll-hint .mouse{width:24px;height:38px;border:2px solid rgba(255,255,255,.5);border-radius:14px;position:relative}
+  .scroll-hint .mouse::before{content:"";position:absolute;top:7px;left:50%;width:4px;height:7px;background:var(--gold-soft);border-radius:3px;transform:translateX(-50%);animation:scrolldot 1.6s infinite}
+  @keyframes scrolldot{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}80%{opacity:0;transform:translate(-50%,12px)}}
+
+  .js .reveal{opacity:0;transform:translateY(34px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+  .sec-head{max-width:680px;margin:0 auto 3.4rem;text-align:center}
+  .sec-tag{display:inline-block;font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;color:var(--gold);margin-bottom:1rem}
+  .sec-tag::before{content:"";display:inline-block;width:26px;height:1.5px;background:var(--gold);vertical-align:middle;margin-right:.6rem}
+  .sec-tag::after{content:"";display:inline-block;width:26px;height:1.5px;background:var(--gold);vertical-align:middle;margin-left:.6rem}
+  .sec-head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin-bottom:1rem}
+  .sec-head p{color:var(--muted);font-size:1.05rem}
+  .sec-left{text-align:left;margin-left:0}
+  .sec-left .sec-tag::before{display:none}
+
+  .about{padding:120px 0;background:var(--cream)}
+  .about-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;align-items:center}
+  .about-visual{position:relative}
+  .about-photo{position:relative;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;
+    background:linear-gradient(160deg,var(--navy),var(--navy-soft)),repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 22px,transparent 22px 24px);
+    display:flex;align-items:center;justify-content:center;text-align:center;color:rgba(255,255,255,.55);padding:24px}
+  .about-photo .ph{font-family:'Manrope';font-weight:600;font-size:.95rem;line-height:1.5}
+  .about-photo .ph b{display:block;font-size:1.4rem;color:rgba(255,255,255,.8);margin-bottom:.4rem}
+  .about-medallion{position:absolute;right:-22px;bottom:-22px;background:var(--gold);color:#fff;border-radius:20px;padding:1.2rem 1.5rem;box-shadow:var(--shadow);text-align:center;border:4px solid var(--cream)}
+  .about-medallion b{font-family:'Playfair Display',serif;font-size:2.1rem;display:block;line-height:1}
+  .about-medallion span{font-size:.78rem;font-weight:700;letter-spacing:.05em}
+  .about-badge{position:absolute;left:-18px;top:26px;background:#fff;border-radius:14px;padding:.8rem 1.1rem;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:.6rem;font-weight:700;font-size:.9rem}
+  .about-badge .dot{width:10px;height:10px;border-radius:50%;background:#34c759;box-shadow:0 0 0 4px rgba(52,199,89,.18)}
+  .about h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:1rem 0 1.2rem}
+  .about .lead{font-size:1.12rem;color:var(--ink);margin-bottom:1.1rem;font-weight:500}
+  .about p{color:var(--muted);margin-bottom:1rem}
+  .about-points{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.8rem 0 2rem}
+  .about-points li{display:flex;gap:.7rem;align-items:flex-start;font-weight:600;font-size:.96rem}
+  .about-points svg{width:22px;height:22px;color:var(--gold);flex-shrink:0;margin-top:2px}
+  .about-sign{display:flex;align-items:center;gap:1rem;border-top:1px solid var(--line);padding-top:1.6rem}
+  .about-sign .sig{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--navy)}
+  .about-sign small{color:var(--muted);font-size:.85rem;display:block}
+
+  .services{padding:120px 0;background:var(--navy);color:#fff;position:relative;overflow:hidden}
+  .services::before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(207,90,44,.16),transparent 65%);top:-160px;left:-120px}
+  .services .sec-head h2{color:#fff}
+  .services .sec-head p{color:rgba(255,255,255,.72)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+  .svc-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:var(--radius);padding:2.2rem 1.9rem;transition:transform .35s var(--ease),background .35s,border-color .35s}
+  .svc-card:hover{transform:translateY(-8px);background:rgba(207,90,44,.10);border-color:rgba(207,90,44,.45)}
+  .svc-ico{width:60px;height:60px;border-radius:16px;display:grid;place-items:center;margin-bottom:1.4rem;background:linear-gradient(150deg,var(--gold),var(--gold-soft));color:#fff}
+  .svc-ico svg{width:28px;height:28px}
+  .svc-card h3{color:#fff;font-size:1.3rem;margin-bottom:.7rem}
+  .svc-card p{color:rgba(255,255,255,.70);font-size:.95rem}
+
+  .stats{padding:80px 0;background:var(--navy-2);color:#fff}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+  .stat b{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,3.4rem);color:var(--gold-soft);display:block;line-height:1}
+  .stat span{display:block;margin-top:.6rem;color:rgba(255,255,255,.75);font-weight:600;font-size:.95rem}
+  .stat .suf{color:var(--gold-soft)}
+
+  .portfolio{padding:120px 0;background:var(--cream)}
+  .filter{display:flex;justify-content:center;gap:.6rem;flex-wrap:wrap;margin-bottom:2.8rem}
+  .filter button{font-family:inherit;font-weight:700;font-size:.92rem;padding:.7rem 1.4rem;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:.25s var(--ease)}
+  .filter button:hover{border-color:var(--gold)}
+  .filter button.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .prop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .prop{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .4s var(--ease),box-shadow .4s var(--ease);display:flex;flex-direction:column}
+  .prop.hide{display:none}
+  .prop:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+  .prop-img{position:relative;aspect-ratio:16/11;overflow:hidden;display:flex;align-items:flex-end;
+    background:linear-gradient(160deg,#8a6650,#5f4234),repeating-linear-gradient(0deg,rgba(255,255,255,.06) 0 18px,transparent 18px 20px);}
+  .prop-img .ph-tag{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);font-weight:600;font-size:.85rem;z-index:0}
+  .prop-img img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+  .prop:hover .prop-img img{transform:scale(1.07)}
+  .prop-tags{position:absolute;top:14px;left:14px;display:flex;gap:.5rem;z-index:2}
+  .tag{font-size:.74rem;font-weight:800;letter-spacing:.04em;padding:.4rem .75rem;border-radius:999px;text-transform:uppercase}
+  .tag.sat{background:var(--gold);color:#fff}
+  .tag.kira{background:#2e7d5b;color:#fff}
+  .tag.dark{background:rgba(26,37,50,.85);color:#fff}
+  .prop-body{padding:1.5rem 1.5rem 1.7rem;display:flex;flex-direction:column;flex:1}
+  .prop-eyebrow{font-weight:800;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+  .prop h3{font-size:1.18rem;margin:.45rem 0 .35rem}
+  .prop .loc{display:flex;align-items:center;gap:.4rem;color:var(--muted);font-size:.9rem;font-weight:600}
+  .prop .loc svg{width:15px;height:15px;color:var(--gold)}
+  .prop-specs{display:flex;gap:1.1rem;margin:1.1rem 0 1.3rem;padding-top:1.1rem;border-top:1px solid var(--line);color:var(--ink);font-weight:600;font-size:.86rem;flex-wrap:wrap}
+  .prop-specs span{display:flex;align-items:center;gap:.4rem}
+  .prop-specs svg{width:17px;height:17px;color:var(--muted)}
+  .prop-cta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:.6rem}
+  .prop-cta a.detay{font-weight:700;font-size:.9rem;color:var(--navy);display:inline-flex;align-items:center;gap:.4rem;transition:gap .25s}
+  .prop-cta a.detay:hover{gap:.7rem;color:var(--gold)}
+  .prop-cta a.detay svg{width:16px;height:16px}
+  .prop-cta a.wa{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;flex-shrink:0;transition:transform .25s}
+  .prop-cta a.wa:hover{transform:scale(1.08)}
+  .prop-cta a.wa svg{width:20px;height:20px}
+  .portfolio-foot{text-align:center;margin-top:3rem}
+  .portfolio-foot p{color:var(--muted);margin-bottom:1.2rem}
+
+  .regions{padding:120px 0;background:#fff}
+  .reg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .reg{position:relative;isolation:isolate;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow-sm);display:flex;align-items:flex-end;color:#fff;
+    background:linear-gradient(160deg,#8a6650,#46342a)}
+  .reg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);z-index:-2}
+  .reg::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(26,37,50,.92),rgba(26,37,50,.15) 60%,transparent)}
+  .reg:hover img{transform:scale(1.08)}
+  .reg-body{padding:1.4rem;width:100%}
+  .reg-body h3{color:#fff;font-size:1.3rem;margin-bottom:.2rem}
+  .reg-body span{font-size:.85rem;color:rgba(255,255,255,.78);font-weight:600}
+  .reg-body .arrow{position:absolute;top:1.2rem;right:1.2rem;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.18);backdrop-filter:blur(4px);display:grid;place-items:center;transition:.3s}
+  .reg:hover .reg-body .arrow{background:var(--gold);color:#fff}
+  .reg-body .arrow svg{width:17px;height:17px}
+
+  .testi{padding:120px 0;background:var(--cream)}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .tcard{background:#fff;border-radius:var(--radius);padding:2.2rem;box-shadow:var(--shadow-sm);position:relative;display:flex;flex-direction:column}
+  .tcard .quote{font-family:'Playfair Display',serif;font-size:4rem;line-height:1;color:var(--gold);opacity:.25;position:absolute;top:1rem;right:1.4rem}
+  .stars{display:flex;gap:.2rem;margin-bottom:1rem;color:var(--gold)}
+  .stars svg{width:18px;height:18px;fill:currentColor}
+  .tcard p{color:var(--ink);font-size:1rem;margin-bottom:1.6rem;position:relative;z-index:1}
+  .tperson{display:flex;align-items:center;gap:.9rem;margin-top:auto}
+  .tperson .av{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(150deg,var(--navy),var(--navy-soft))}
+  .tperson b{display:block;font-size:.98rem;color:var(--navy)}
+  .tperson small{color:var(--muted);font-size:.82rem}
+  .testi-foot{text-align:center;margin-top:3rem}
+
+  .contact{padding:120px 0;background:var(--navy);color:#fff;position:relative;overflow:hidden}
+  .contact::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(207,90,44,.14),transparent 65%);bottom:-200px;right:-140px}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;position:relative}
+  .contact .sec-tag{color:var(--gold-soft)}
+  .contact h2{color:#fff;font-size:clamp(2rem,3.6vw,2.8rem);margin-bottom:1rem}
+  .contact .intro{color:rgba(255,255,255,.78);margin-bottom:2.2rem;max-width:46ch}
+  .ci-list{display:flex;flex-direction:column;gap:1.1rem;margin-bottom:2.2rem}
+  .ci{display:flex;align-items:center;gap:1rem}
+  .ci .ic{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;flex-shrink:0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:var(--gold-soft)}
+  .ci .ic svg{width:22px;height:22px}
+  .ci small{display:block;color:rgba(255,255,255,.6);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+  .ci b{font-size:1.08rem;font-weight:700}
+  .ci a{transition:color .25s}.ci a:hover{color:var(--gold-soft)}
+  .socials{display:flex;gap:.8rem}
+  .socials a{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);color:#fff;transition:.25s}
+  .socials a:hover{background:var(--gold);color:#fff;transform:translateY(-3px);border-color:var(--gold)}
+  .socials svg{width:22px;height:22px}
+  .form-card{background:#fff;border-radius:24px;padding:2.4rem;box-shadow:var(--shadow);color:var(--ink)}
+  .form-card h3{font-size:1.5rem;margin-bottom:.4rem}
+  .form-card .fsub{color:var(--muted);font-size:.92rem;margin-bottom:1.6rem}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .field{margin-bottom:1.1rem}
+  .field label{display:block;font-weight:700;font-size:.85rem;margin-bottom:.45rem;color:var(--navy)}
+  .field input,.field select,.field textarea{width:100%;font-family:inherit;font-size:.95rem;padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:12px;background:var(--cream);color:var(--ink);transition:.2s}
+  .field textarea{resize:vertical;min-height:110px}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(207,90,44,.14)}
+  .form-note{font-size:.8rem;color:var(--muted);margin-top:.9rem;text-align:center}
+
+  footer.site{background:#10191f;color:rgba(255,255,255,.7);padding:64px 0 28px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.10)}
+  .foot-brand .brand{color:#fff;margin-bottom:1.1rem}
+  .foot-brand p{font-size:.93rem;max-width:38ch}
+  footer.site h4{color:#fff;font-family:'Manrope';font-weight:800;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.2rem}
+  footer.site ul li{margin-bottom:.7rem}
+  footer.site ul a{font-size:.93rem;transition:color .25s}
+  footer.site ul a:hover{color:var(--gold-soft)}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:24px;font-size:.85rem}
+  .foot-bottom a:hover{color:var(--gold-soft)}
+
+  .wa-float{position:fixed;right:22px;bottom:22px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.6);animation:waPulse 2.4s infinite;transition:transform .25s}
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float svg{width:32px;height:32px;color:#fff}
+  @keyframes waPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+  @media(max-width:980px){
+    nav.links,.nav-phone{display:none}
+    .hamburger{display:flex}
+    nav.links{position:fixed;inset:0 0 0 auto;width:min(78%,320px);background:var(--navy);flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:.5rem;padding:100px 32px 32px;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-20px 0 50px -20px rgba(0,0,0,.5);z-index:99}
+    nav.links.open{transform:translateX(0);display:flex}
+    nav.links a{color:#fff;font-size:1.15rem;width:100%;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    header.nav.scrolled nav.links a{color:#fff}
+    body.menu-open{overflow:hidden}
+    .nav-backdrop{position:fixed;inset:0;background:rgba(8,16,24,.55);opacity:0;visibility:hidden;transition:.35s;z-index:98}
+    .nav-backdrop.show{opacity:1;visibility:visible}
+    .hamburger.active span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+    .hamburger.active span:nth-child(2){opacity:0}
+    .hamburger.active span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+    header.nav.scrolled .hamburger.active span{background:#fff}
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
+    .about-visual{max-width:420px;margin:0 auto}
+    .svc-grid,.testi-grid{grid-template-columns:1fr 1fr}
+    .prop-grid{grid-template-columns:1fr 1fr}
+    .reg-grid{grid-template-columns:1fr 1fr}
+    .stats-grid{grid-template-columns:1fr 1fr;gap:36px 24px}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:36px}
+  }
+  @media(max-width:620px){
+    .container{padding:0 18px}
+    section{scroll-margin-top:74px}
+    .hero{min-height:auto;align-items:flex-start}
+    .hero .container{padding-top:130px;padding-bottom:60px}
+    .hero h1{margin-top:.4rem}
+    .scroll-hint{display:none}
+    .about,.services,.portfolio,.regions,.testi,.contact{padding:80px 0}
+    .hero-meta{gap:1.6rem}
+    .hero-meta .m b{font-size:1.6rem}
+    .hero-actions{width:100%}
+    .hero-actions .btn{flex:1;justify-content:center}
+    .svc-grid,.testi-grid,.prop-grid,.reg-grid,.foot-grid{grid-template-columns:1fr}
+    .about-points{grid-template-columns:1fr}
+    .frow{grid-template-columns:1fr}
+    .form-card{padding:1.7rem}
+    .nav-cta .btn-gold{display:none}
+    .foot-bottom{flex-direction:column;text-align:center}
+    .reg{aspect-ratio:16/10}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+    html{scroll-behavior:auto}
+    .js .reveal{opacity:1!important;transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#hero" class="brand" aria-label="Voeg Snel B.V. home">
+      <span class="mono">VS</span>
+      <span class="b-text"><small>Voegbedrijf ¬∑ Den Haag</small><span>Voeg Snel B.V.</span></span>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#over">Over ons</a>
+      <a href="#diensten">Diensten</a>
+      <a href="#werk">Projecten</a>
+      <a href="#werkgebied">Werkgebied</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <!-- VERVANG telefoon -->
+      <a href="tel:+31612345678" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>06 12 34 56 78</span>
+      </a>
+      <a href="#contact" class="btn btn-gold">Gratis offerte</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <span class="hero-eyebrow reveal">üìç Den Haag ‚Ä¢ Voegwerk ¬∑ Gevelreiniging ¬∑ Renovatie</span>
+    <h1 class="reveal d1">Een strakke, duurzame gevel begint bij <em>vakwerk</em></h1>
+    <p class="lead reveal d2">Voeg Snel B.V. verzorgt sinds 2007 compleet voeg- en gevelwerk in Den Haag en omstreken ‚Äî van uithakken en opnieuw invoegen tot gevelreiniging en renovatie. Vakkundig, netjes en met garantie op het werk.</p>
+    <div class="hero-actions reveal d3">
+      <a href="#werk" class="btn btn-gold">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+        Bekijk ons werk
+      </a>
+      <!-- VERVANG WhatsApp -->
+      <a href="https://wa.me/31600000000" target="_blank" rel="noopener" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2-1.3-.5-.5-.8-1.1-1.1-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg>
+        App ons direct
+      </a>
+    </div>
+    <div class="hero-meta reveal d4">
+      <div class="m"><b data-count="17"><span class="plus">+</span></b><span>Jaar ervaring</span></div>
+      <div class="m"><b data-count="500"><span class="plus">+</span></b><span>Gevels gevoegd</span></div>
+      <div class="m"><b data-count="98">%</b><span>Tevreden klanten</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span class="mouse"></span>Scroll</div>
+</section>
+
+<!-- ===== OVER ONS ===== -->
+<section class="about" id="over">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <div class="about-photo">
+        <!-- FOTO: vervang dit blok door een echte foto van Idris / het team aan het werk -->
+        <span class="ph"><b>üì∑ Foto</b>Plaats hier een foto van<br>Idris / het team aan het werk</span>
+      </div>
+      <div class="about-badge"><span class="dot"></span>Nu plek voor nieuwe klussen</div>
+      <div class="about-medallion"><b>2007</b><span>Vakwerk sinds</span></div>
+    </div>
+    <div class="about-text">
+      <span class="sec-tag">Over Voeg Snel</span>
+      <h2>Uw specialist in voeg- en gevelwerk in Den Haag</h2>
+      <p class="lead">Voeg Snel B.V. is een gespecialiseerd voegbedrijf uit Den Haag. Sinds 2007 verzorgen wij compleet voegwerk ‚Äî van beoordeling en advies tot uitvoering en nazorg.</p>
+      <p>Wij werken met een klein, vast team. Dat betekent korte lijnen, √©√©n aanspreekpunt en werk waar we onze naam aan verbinden. Voor particulieren, VvE's en bedrijven leveren we strak, duurzaam resultaat tegen een eerlijke prijs.</p>
+      <ul class="about-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Gratis inspectie &amp; advies</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Garantie op de uitvoering</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Veilig werken (VCA)</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Netjes &amp; opgeruimd opgeleverd</li>
+      </ul>
+      <div class="about-sign">
+        <div><span class="sig">Voeg Snel B.V.</span><small>Voegwerk ¬∑ Gevelonderhoud ¬∑ Renovatie ‚Äî Den Haag</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIENSTEN ===== -->
+<section class="services" id="diensten">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Diensten</span>
+      <h2>Compleet voeg- en gevelwerk onder √©√©n dak</h2>
+      <p>Van uithakken en invoegen tot reinigen, impregneren en renoveren ‚Äî alles voor een strakke, beschermde gevel.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal d1">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div>
+        <h3>Voegwerk</h3>
+        <p>Uithakken en opnieuw invoegen van bestaand metselwerk, in de juiste mortel en kleur. Knipvoegen, platvol of verdiept ‚Äî strak en duurzaam.</p>
+      </div>
+      <div class="svc-card reveal d2">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M7 21V9l5-6 5 6v12"/><path d="M12 9v0"/></svg></div>
+        <h3>Gevelreiniging</h3>
+        <p>Reinigen van vervuilde, vergroende of beroete gevels. Uw pand ziet er weer als nieuw uit ‚Äî zonder de bakstenen te beschadigen.</p>
+      </div>
+      <div class="svc-card reveal d3">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4Z"/></svg></div>
+        <h3>Impregneren &amp; hydrofoberen</h3>
+        <p>Een waterafstotende laag tegen vocht, vorstschade en vervuiling. Zo gaat uw gevel jaren langer mee en blijft hij droog.</p>
+      </div>
+      <div class="svc-card reveal d1">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m14 2 8 8-4 4-8-8 4-4Z"/><path d="m11 9-8 8 2 2 8-8"/></svg></div>
+        <h3>Herstel &amp; renovatie</h3>
+        <p>Metselwerk, scheurherstel en gevelrenovatie. Ook lastige klussen pakken we vakkundig en met oog voor detail aan.</p>
+      </div>
+      <div class="svc-card reveal d2">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22V8l6-4 6 4v14"/><path d="M16 11h4v11M4 22h18"/><path d="M9 22v-5h2v5"/></svg></div>
+        <h3>Schoorsteenrenovatie</h3>
+        <p>Voegen, herstellen of opnieuw opmetselen van schoorstenen. Veilig uitgevoerd en netjes afgewerkt, tot op hoogte.</p>
+      </div>
+      <div class="svc-card reveal d3">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M3 14h18M9 4v16"/></svg></div>
+        <h3>Betonreparatie</h3>
+        <p>Herstel van beschadigd of afgebrokkeld beton, betonrot en lateien. Constructief in orde en strak afgewerkt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat reveal"><b data-count="17"><span class="suf">+</span></b><span>Jaar vakwerk</span></div>
+    <div class="stat reveal d1"><b data-count="500"><span class="suf">+</span></b><span>Gevels onder handen</span></div>
+    <div class="stat reveal d2"><b data-count="47"><span class="suf"></span></b><span>Google-reviews</span></div>
+    <div class="stat reveal d3"><b data-count="98"><span class="suf">%</span></b><span>Tevredenheid</span></div>
+  </div>
+</section>
+
+<!-- ===== PROJECTEN ===== -->
+<section class="portfolio" id="werk">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Projecten</span>
+      <h2>Recent uitgevoerd werk</h2>
+      <p>Een greep uit onze projecten in de regio. Vervang deze foto's door eigen voor/na-beelden ‚Äî dat werkt het sterkst.</p>
+    </div>
+
+    <div class="filter reveal" id="filter">
+      <button class="active" data-f="all">Alles</button>
+      <button data-f="sat">Voegwerk</button>
+      <button data-f="kira">Gevelreiniging</button>
+      <button data-f="arsa">Renovatie</button>
+    </div>
+
+    <div class="prop-grid" id="propGrid">
+      <!-- 1 -->
+      <article class="prop reveal" data-type="sat">
+        <div class="prop-img">
+          <span class="ph-tag">üì∑ FOTO: voegwerk</span>
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Voegwerk gevel" loading="lazy" onerror="this.remove()" />
+          <div class="prop-tags"><span class="tag sat">Voegwerk</span></div>
+        </div>
+        <div class="prop-body">
+          <span class="prop-eyebrow">Uithakken &amp; invoegen</span>
+          <h3>Gevel volledig opnieuw gevoegd</h3>
+          <div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Benoordenhout, Den Haag</div>
+          <div class="prop-specs">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>¬±120 m¬≤</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h18M9 3v18"/></svg>Knipvoeg</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>5 dagen</span>
+          </div>
+          <div class="prop-cta">
+            <a href="#contact" class="detay">Vergelijkbaar werk? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="wa" href="https://wa.me/31600000000?text=Ik%20wil%20graag%20mijn%20gevel%20laten%20voegen" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm4.4 12c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2-1.3-.5-.5-.8-1.1-1.1-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <!-- 2 -->
+      <article class="prop reveal d1" data-type="arsa">
+        <div class="prop-img">
+          <span class="ph-tag">üì∑ FOTO: gevelrenovatie</span>
+          <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80" alt="Gevelrenovatie woningen" loading="lazy" onerror="this.remove()" />
+          <div class="prop-tags"><span class="tag sat" style="background:#cf5a2c">Renovatie</span></div>
+        </div>
+        <div class="prop-body">
+          <span class="prop-eyebrow">VvE-project</span>
+          <h3>Gevelrenovatie 22 woningen</h3>
+          <div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Hazerswoude-Dorp</div>
+          <div class="prop-specs">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>22 woningen</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m14 2 8 8-4 4-8-8 4-4Z"/></svg>Voeg + herstel</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Meerdere weken</span>
+          </div>
+          <div class="prop-cta">
+            <a href="#contact" class="detay">Project bespreken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="wa" href="https://wa.me/31600000000?text=Wij%20zoeken%20een%20voegbedrijf%20voor%20onze%20VvE" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm4.4 12c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2-1.3-.5-.5-.8-1.1-1.1-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <!-- 3 -->
+      <article class="prop reveal d2" data-type="kira">
+        <div class="prop-img">
+          <span class="ph-tag">üì∑ FOTO: gevelreiniging</span>
+          <img src="https://images.unsplash.com/photo-1486304873000-235643847519?auto=format&fit=crop&w=800&q=80" alt="Gevelreiniging" loading="lazy" onerror="this.remove()" />
+          <div class="prop-tags"><span class="tag kira">Reiniging</span></div>
+        </div>
+        <div class="prop-body">
+          <span class="prop-eyebrow">Reinigen + impregneren</span>
+          <h3>Gevel gereinigd &amp; waterwerend gemaakt</h3>
+          <div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rijswijk</div>
+          <div class="prop-specs">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>¬±90 m¬≤</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6Z"/></svg>Hydrofoberen</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>2 dagen</span>
+          </div>
+          <div class="prop-cta">
+            <a href="#contact" class="detay">Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="wa" href="https://wa.me/31600000000?text=Ik%20wil%20mijn%20gevel%20laten%20reinigen" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm4.4 12c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2-1.3-.5-.5-.8-1.1-1.1-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <!-- 4 -->
+      <article class="prop reveal" data-type="sat">
+        <div class="prop-img">
+          <span class="ph-tag">üì∑ FOTO: voegwerk</span>
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Voegwerk woning" loading="lazy" onerror="this.remove()" />
+          <div class="prop-tags"><span class="tag sat">Voegwerk</span></div>
+        </div>
+        <div class="prop-body">
+          <span class="prop-eyebrow">Particulier</span>
+          <h3>Voorgevel woning opnieuw gevoegd</h3>
+          <div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Delft</div>
+          <div class="prop-specs">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>¬±45 m¬≤</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h18M9 3v18"/></svg>Platvol</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 dagen</span>
+          </div>
+          <div class="prop-cta">
+            <a href="#contact" class="detay">Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="wa" href="https://wa.me/31600000000?text=Ik%20wil%20mijn%20voorgevel%20laten%20voegen" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm4.4 12c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2-1.3-.5-.5-.8-1.1-1.1-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <!-- 5 -->
+      <article class="prop reveal d1" data-type="arsa">
+        <div class="prop-img">
+          <span class="ph-tag">üì∑ FOTO: schoorsteen</span>
+          <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80" alt="Schoorsteenrenovatie" loading="lazy" onerror="this.remove()" />
+          <div class="prop-tags"><span class="tag dark">Schoorsteen</span></div>
+        </div>
+        <div class="prop-body">
+          <span class="prop-eyebrow">Renovatie op hoogte</span>
+          <h3>Schoorsteen hersteld &amp; opnieuw gevoegd</h3>
+          <div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Zoetermeer</div>
+          <div class="prop-specs">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22V8l8-5 8 5v14"/></svg>Dakhoogte</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m14 2 8 8-4 4-8-8 4-4Z"/></svg>Herstel</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>2 dagen</span>
+          </div>
+          <div class="prop-cta">
+            <a href="#contact" class="detay">Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="wa" href="https://wa.me/31600000000?text=Mijn%20schoorsteen%20moet%20gerenoveerd%20worden" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm4.4 12c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2-1.3-.5-.5-.8-1.1-1.1-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <!-- 6 -->
+      <article class="prop reveal d2" data-type="kira">
+        <div class="prop-img">
+          <span class="ph-tag">üì∑ FOTO: gereinigde gevel</span>
+          <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=800&q=80" alt="Gereinigde gevel appartementen" loading="lazy" onerror="this.remove()" />
+          <div class="prop-tags"><span class="tag kira">Reiniging</span></div>
+        </div>
+        <div class="prop-body">
+          <span class="prop-eyebrow">Appartementencomplex</span>
+          <h3>Achtergevel gereinigd &amp; ontmost</h3>
+          <div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Den Haag ‚Äî Laak</div>
+          <div class="prop-specs">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>¬±210 m¬≤</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M7 21V9l5-6 5 6v12"/></svg>Hoogwerker</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 dagen</span>
+          </div>
+          <div class="prop-cta">
+            <a href="#contact" class="detay">Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="wa" href="https://wa.me/31600000000?text=Ik%20wil%20een%20gevel%20laten%20reinigen%20bij%20een%20complex" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm4.4 12c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2-1.3-.5-.5-.8-1.1-1.1-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="portfolio-foot reveal">
+      <p>Benieuwd wat uw gevel nodig heeft? Wij komen vrijblijvend langs voor een gratis inspectie.</p>
+      <a href="#contact" class="btn btn-dark">Plan een gratis inspectie</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WERKGEBIED ===== -->
+<section class="regions" id="werkgebied">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Werkgebied</span>
+      <h2>Actief in Den Haag en heel Zuid-Holland</h2>
+      <p>Geen project te ver. Staat uw plaats er niet bij? Neem gerust contact op.</p>
+    </div>
+    <div class="reg-grid">
+      <a href="#contact" class="reg reveal">
+        <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=600&q=80" alt="Den Haag" loading="lazy" onerror="this.remove()" />
+        <div class="reg-body"><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></span><h3>Den Haag</h3><span>Ons thuisgebied</span></div>
+      </a>
+      <a href="#contact" class="reg reveal d1">
+        <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=600&q=80" alt="Rijswijk" loading="lazy" onerror="this.remove()" />
+        <div class="reg-body"><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></span><h3>Rijswijk</h3><span>&amp; Voorburg</span></div>
+      </a>
+      <a href="#contact" class="reg reveal d2">
+        <img src="https://images.unsplash.com/photo-1486304873000-235643847519?auto=format&fit=crop&w=600&q=80" alt="Delft" loading="lazy" onerror="this.remove()" />
+        <div class="reg-body"><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></span><h3>Delft</h3><span>&amp; Zoetermeer</span></div>
+      </a>
+      <a href="#contact" class="reg reveal d3">
+        <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=600&q=80" alt="Westland" loading="lazy" onerror="this.remove()" />
+        <div class="reg-body"><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></span><h3>Westland</h3><span>&amp; Wassenaar</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="testi" id="reviews">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Reviews</span>
+      <h2>Wat klanten over ons zeggen</h2>
+      <p>Gemiddeld 4,8 uit 5 op basis van 47 Google-reviews.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="tcard reveal">
+        <span class="quote">‚Äù</span>
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg></div>
+        <p>Strak voegwerk en netjes gewerkt. Vooraf een duidelijke prijs en ze kwamen de afspraken precies na. Onze gevel ziet er weer als nieuw uit. Aanrader!</p>
+        <div class="tperson"><span class="av">JV</span><div><b>J. de Vries</b><small>Den Haag ¬∑ Voegwerk</small></div></div>
+      </div>
+      <div class="tcard reveal d1">
+        <span class="quote">‚Äù</span>
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg></div>
+        <p>Gevel laten reinigen en impregneren. Vriendelijk team, goede communicatie en alles keurig opgeruimd achtergelaten. Heel tevreden over het resultaat.</p>
+        <div class="tperson"><span class="av">MB</span><div><b>M. Bakker</b><small>Rijswijk ¬∑ Gevelreiniging</small></div></div>
+      </div>
+      <div class="tcard reveal d2">
+        <span class="quote">‚Äù</span>
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5 4.7 1.3 7-6.3-3.5L5.7 21 7 14.1 2 9.4l7-.9z"/></svg></div>
+        <p>Voor onze VvE 22 woningen gerenoveerd. Goed geregeld, op tijd klaar en netjes opgeleverd. Duidelijke planning en heldere communicatie. Top gedaan.</p>
+        <div class="tperson"><span class="av">RS</span><div><b>R. Smit</b><small>VvE-beheerder</small></div></div>
+      </div>
+    </div>
+    <div class="testi-foot reveal">
+      <!-- VERVANG: link naar uw Google Bedrijfsprofiel -->
+      <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-dark">Bekijk al onze Google-reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <span class="sec-tag">Contact &amp; offerte</span>
+      <h2>Vraag vrijblijvend een offerte aan</h2>
+      <p class="intro">Bel, app of vul het formulier in. U krijgt snel een reactie en een gratis inspectie op locatie.</p>
+      <div class="ci-list">
+        <!-- VERVANG telefoon -->
+        <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><small>Telefoon</small><b><a href="tel:+31612345678">06 12 34 56 78</a></b></div></div>
+        <!-- VERVANG e-mail -->
+        <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><div><small>E-mail</small><b><a href="mailto:info@voegsnel.nl">info@voegsnel.nl</a></b></div></div>
+        <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Werkgebied</small><b>Den Haag &amp; heel Zuid-Holland</b></div></div>
+        <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><small>Openingstijden</small><b>Ma‚ÄìVr ¬∑ 07:30‚Äì17:30</b></div></div>
+      </div>
+      <div class="socials">
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v2H7v4h3v6h4v-6h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg></a>
+        <a href="https://wa.me/31600000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2-1.3-.5-.5-.8-1.1-1.1-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="form-card reveal d1">
+      <h3>Offerte aanvragen</h3>
+      <p class="fsub">Vul het formulier in ‚Äî uw aanvraag wordt via WhatsApp naar ons verstuurd.</p>
+      <form id="leadForm">
+        <div class="frow">
+          <div class="field"><label for="ad">Naam</label><input type="text" id="ad" name="ad" placeholder="Uw naam" required /></div>
+          <div class="field"><label for="tel">Telefoon</label><input type="tel" id="tel" name="tel" placeholder="06 12 34 56 78" required /></div>
+        </div>
+        <div class="frow">
+          <div class="field"><label for="islem">Type werk</label>
+            <select id="islem" name="islem">
+              <option>Voegwerk (uithakken &amp; invoegen)</option>
+              <option>Gevelreiniging</option>
+              <option>Impregneren / hydrofoberen</option>
+              <option>Herstel &amp; renovatie</option>
+              <option>Schoorsteenrenovatie</option>
+              <option>Betonreparatie</option>
+              <option>Weet ik nog niet</option>
+            </select>
+          </div>
+          <div class="field"><label for="bolge">Plaats</label>
+            <select id="bolge" name="bolge">
+              <option>Den Haag</option><option>Rijswijk</option><option>Delft</option>
+              <option>Zoetermeer</option><option>Wassenaar</option><option>Westland</option><option>Anders</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="mesaj">Bericht</label><textarea id="mesaj" name="mesaj" placeholder="Vertel kort wat u zoekt (gevel, oppervlakte, wanneer...). Foto's mailen mag ook."></textarea></div>
+        <button type="submit" class="btn btn-gold btn-wide">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg>
+          Verstuur via WhatsApp
+        </button>
+        <p class="form-note">Uw gegevens worden alleen gebruikt om contact met u op te nemen.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#hero" class="brand"><span class="mono">VS</span><span class="b-text"><small>Voegbedrijf ¬∑ Den Haag</small><span>Voeg Snel B.V.</span></span></a>
+        <p>Uw specialist in voegwerk, gevelreiniging en gevelrenovatie in Den Haag en omgeving. Vakwerk sinds 2007.</p>
+      </div>
+      <div>
+        <h4>Diensten</h4>
+        <ul>
+          <li><a href="#diensten">Voegwerk</a></li>
+          <li><a href="#diensten">Gevelreiniging</a></li>
+          <li><a href="#diensten">Impregneren</a></li>
+          <li><a href="#diensten">Herstel &amp; renovatie</a></li>
+          <li><a href="#werk">Projecten</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <!-- VERVANG telefoon/e-mail/adres -->
+          <li><a href="tel:+31612345678">06 12 34 56 78</a></li>
+          <li><a href="mailto:info@voegsnel.nl">info@voegsnel.nl</a></li>
+          <li>Zilverstraat 123, 2513 RP Den Haag</li>
+          <li>KVK 66285067</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>¬© <span id="year"></span> Voeg Snel B.V. ‚Äî Alle rechten voorbehouden.</span>
+      <span>Den Haag ¬∑ Rijswijk ¬∑ Delft ¬∑ Zoetermeer ¬∑ Westland</span>
+    </div>
+  </div>
+</footer>
+
+<!-- VERVANG WhatsApp -->
+<a class="wa-float" href="https://wa.me/31600000000" target="_blank" rel="noopener" aria-label="App ons via WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2-1.3-.5-.5-.8-1.1-1.1-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg>
+</a>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<script>
+  // ===== WHATSAPP NUMMER (op √©√©n plek aanpassen) =====
+  var WA_NUMBER = "31600000000"; // <-- VERVANG door echt nummer (31 + mobiel zonder eerste 0, bv. 31612345678)
+
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 30); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  var hb = document.getElementById('hamburger'),
+      links = document.getElementById('navLinks'),
+      backdrop = document.getElementById('navBackdrop');
+  function toggleMenu(open){
+    links.classList.toggle('open', open);
+    hb.classList.toggle('active', open);
+    backdrop.classList.toggle('show', open);
+    document.body.classList.toggle('menu-open', open);
+  }
+  hb.addEventListener('click', function(){ toggleMenu(!links.classList.contains('open')); });
+  backdrop.addEventListener('click', function(){ toggleMenu(false); });
+  links.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ toggleMenu(false); }); });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.14, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  function animateCount(el){
+    var target = +el.getAttribute('data-count'), suffix = el.innerHTML, dur = 1400, t0 = null;
+    function step(ts){
+      if(!t0) t0 = ts;
+      var p = Math.min((ts - t0)/dur, 1);
+      var val = Math.floor((0.5 - Math.cos(p*Math.PI)/2) * target);
+      el.innerHTML = val + suffix;
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window) {
+    var cio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ animateCount(e.target); cio.unobserve(e.target); } });
+    }, {threshold:.6});
+    document.querySelectorAll('[data-count]').forEach(function(el){ cio.observe(el); });
+  } else {
+    document.querySelectorAll('[data-count]').forEach(function(el){ el.innerHTML = el.getAttribute('data-count') + el.innerHTML; });
+  }
+
+  var filterBox = document.getElementById('filter'),
+      props = document.querySelectorAll('#propGrid .prop');
+  filterBox.addEventListener('click', function(e){
+    var btn = e.target.closest('button'); if(!btn) return;
+    filterBox.querySelector('.active').classList.remove('active');
+    btn.classList.add('active');
+    var f = btn.getAttribute('data-f');
+    props.forEach(function(p){
+      var show = (f === 'all') || (p.getAttribute('data-type') === f);
+      p.classList.toggle('hide', !show);
+    });
+  });
+
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var ad = document.getElementById('ad').value.trim(),
+        tel = document.getElementById('tel').value.trim(),
+        islem = document.getElementById('islem').value,
+        bolge = document.getElementById('bolge').value,
+        mesaj = document.getElementById('mesaj').value.trim();
+    var text = "Hallo Voeg Snel,%0A%0AIk wil graag een vrijblijvende offerte.%0A%0A" +
+      "Naam: " + encodeURIComponent(ad) + "%0A" +
+      "Telefoon: " + encodeURIComponent(tel) + "%0A" +
+      "Type werk: " + encodeURIComponent(islem) + "%0A" +
+      "Plaats: " + encodeURIComponent(bolge) + "%0A" +
+      (mesaj ? ("Bericht: " + encodeURIComponent(mesaj) + "%0A") : "") +
+      "%0A(via website)";
+    window.open("https://wa.me/" + WA_NUMBER + "?text=" + text, "_blank");
+  });
+
+  // Sync alle wa.me-links met WA_NUMBER (placeholder-veiligheid)
+  document.querySelectorAll('a[href*="wa.me/31600000000"]').forEach(function(a){
+    a.href = a.href.replace('31600000000', WA_NUMBER);
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
